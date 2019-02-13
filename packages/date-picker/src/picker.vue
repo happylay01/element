@@ -726,7 +726,8 @@ export default {
       this.userInput = initialValue === '' ? null : initialValue;
     },
 
-    handleFocus() {
+    handleFocus(event) {
+      console.log('event test', event)
       const type = this.type;
 
       if (HAVE_TRIGGER_TYPES.indexOf(type) !== -1 && !this.pickerVisible) {
