@@ -578,7 +578,7 @@ export default {
       gpuAcceleration: false
     };
     this.placement = PLACEMENT_MAP[this.align] || PLACEMENT_MAP.left;
-
+    debugger
     this.$on('fieldReset', this.handleFieldReset);
     if (this.valueFormat.toLocaleLowerCase().includes('hh')) {
       this.placeholder = '_年_月_日 _时_分'
